@@ -13,3 +13,8 @@ models:
             tests:
              - unique
              - not_null
+    - name: payments
+      columns:
+          - name: payment_id
+            tests:
+             - unique
