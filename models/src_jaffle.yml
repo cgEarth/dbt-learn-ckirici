@@ -17,3 +17,10 @@ sources:
       - name: payment
         description: >-
           Historical payments data - raw
+  - name: customers
+    schema: jaffle_shop
+    database: raw
+    tables:
+      - name: customers
+        description: >-
+          List of customers raw - one unique customers per line
