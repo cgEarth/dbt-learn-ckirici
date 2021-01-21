@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    schema: jaffle_shop
+    database: raw
+    loaded_at_field: _ETL_LOADED_AT
+    tables:
+      - name: orders
+        description: >-
+          Historical orders data - raw
+  - name: stripe
+    schema: stripe
+    database: raw
+    loaded_at_field: _BATCHED_AT
+    tables:
+      - name: payment
+        description: >-
+          Historical payments data - raw

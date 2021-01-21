@@ -5,7 +5,7 @@ with payments as (
     status as payment_status,
     amount::int * 0.01 as amount
 
-from raw.stripe.payment
+from {{ source('stripe', 'payment') }}
 
 )
 
